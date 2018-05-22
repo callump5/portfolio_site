@@ -25,7 +25,9 @@ SECRET_KEY = '!bqh0w_z(+uozwe=b8qeo31i4h)bege_5p*c$7#$%hs%!k9^c6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'cpullinger.herokuapp.com'
+]
 
 
 # Application definition
