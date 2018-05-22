@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'cpullinger.herokuapp.com'
+    'cpullinger.herokuapp.com',
+    'www.callum-pullinger.co.uk'
 ]
 
 
