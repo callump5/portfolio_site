@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CP Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/static/lib/css/bootstrap.css">
@@ -32,8 +32,8 @@
 
         <a id="name" href="/">Callum Pullinger</a>
         <ul class="nav">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
             <li><a>Blog</a></li>
             <li><a>Projects</a></li>
             <li><a>Contact</a></li>
@@ -55,5 +55,15 @@
 {% endblock %}
 </main>
 
+
+
+    <script type="text/javascript">
+        $('.nav li').mouseover(function () {
+            $(this).css('cursor', 'pointer');
+            $(this).on('click', function () {
+                  window.location = $(this).find("a").first().attr("href");
+            })
+        })
+    </script>
 </body>
 </html>
