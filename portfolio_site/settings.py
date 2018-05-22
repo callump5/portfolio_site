@@ -26,6 +26,7 @@ SECRET_KEY = '!bqh0w_z(+uozwe=b8qeo31i4h)bege_5p*c$7#$%hs%!k9^c6'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'cpullinger.herokuapp.com'
 ]
 
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio_site.urls'
