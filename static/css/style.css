@@ -1,0 +1,142 @@
+:root {
+    --navWidth: 120px;
+    --navPadding: 10px;
+    --logoWidth: 100px;
+    --navColor1: rgb(25, 255, 154);
+    --navColor2: rgb(75, 41, 191);
+    --background1: #060610;
+    --background2: rgba(0, 204, 255, 0.29);
+    --navText: #000000;
+    --navSpacing: 15px;
+    --textColor: #f8fff7;
+}
+
+
+h1, h2, h3, h4, ul, li, a, button, th, td, text, p, label, span{
+    color: var(--textColor);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--background1);
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: var(--navWidth);
+    padding: var(--navPadding);
+    background: linear-gradient(135deg, var(--navColor1) 50%, var(--navColor2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+#logo img {
+    width: var(--logoWidth);
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#name {
+    padding: var(--navSpacing) 0;
+    border-bottom: var(--navText) 5px solid;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li {
+    width: var(--logoWidth);
+    height: 50px;
+    margin:1.25px 0;
+    padding:1.25px 0;
+    border-bottom: 1px solid var(--navText);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li:hover{
+    background-color: var(--background2);
+}
+
+nav p, nav ul li, nav a {
+    color: var(--navText);
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: var(--background2);
+}
+
+
+#main {
+    margin-top: 25px;
+}
+
+
+.page {
+    margin-left: var(--navWidth);
+}
+.page-header {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.page h1 {
+    font-size: 3em;
+    margin: 15px 0;
+}
+.page p {
+    font-size: 2em;
+    margin: 15px 0;
+}
+.page a {
+    font-size: 1.6em;
+    margin: 15px 0;
+}
+
+#home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.btn {
+    border: 2px solid var(--background2);
+}
+
+.fa {
+    color: yellow;
+}
+
+.swing {
+    animation: swing 3s ease;
+}
+
+.name{
+    animation-delay: 5s;
+    animation: shake 3s ease;
+}

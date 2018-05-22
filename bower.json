@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_site",
+  "authors": [
+    "Callum <clpullinger@gmail.com>"
+  ],
+  "description": "portfolio site for myself",
+  "main": "manage.py",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "fontawesome": "^5.0.13"
+  }
+}
