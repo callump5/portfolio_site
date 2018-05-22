@@ -1,0 +1,5 @@
+Django==1.11.13
+django-fontawesome==1.0
+gunicorn==19.4.0
+pytz==2018.4
+PyYAML==3.12
