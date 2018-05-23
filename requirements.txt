@@ -4,5 +4,3 @@ gunicorn
 pytz
 PyYAML
 whitenoise
-mysql
-mySQL-python
