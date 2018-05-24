@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'about',
+    'projects',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,6 @@ WSGI_APPLICATION = 'portfolio_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-
 """
 DATABASES = {
     'default': {
@@ -91,11 +91,11 @@ DATABASES = {
     }
 }
 """
-
 #Live
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
+
 
 
 # Password validation
@@ -142,6 +142,12 @@ STATICFILES_DIRS = (
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+MEDIA_URL = '/media/'
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
