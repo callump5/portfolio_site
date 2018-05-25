@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --navWidth: 120px;
     --navPadding: 10px;
@@ -9,8 +10,14 @@
     --navText: #000000;
     --navSpacing: 15px;
     --textColor: #f8fff7;
+
+    --color1: #5bff64;
+    --color2: #38f0ff;
+    --color3: #ff48ed;
 }
 
+
+/* Fonts */
 
 h1, h2, h3, h4, ul, li, a, button, th, td, text, p, label, span{
     color: var(--textColor);
@@ -18,21 +25,39 @@ h1, h2, h3, h4, ul, li, a, button, th, td, text, p, label, span{
     font-size: 20px;
 }
 
-body {
-    background-color: var(--background1);
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.8em;
+}
+p {
+    font-size: 1.6em;
+}
+.page a {
+    font-size: 1.6em;
 }
 
+/* Index */
+body {
+    background-color: var(--background1);
+    overflow-x: hidden;
+}
+
+/* Side Nav */
+
 #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
 
-    height: 100vh;
+    z-index: 100;
+    height: 100%;
     width: var(--navWidth);
     padding: var(--navPadding);
     background: linear-gradient(135deg, var(--navColor1) 50%, var(--navColor2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -88,13 +113,25 @@ nav a:hover {
 }
 
 
+/* Content Layout */
+
 #main {
     margin-top: 25px;
+    height: 100%;
+    width: 100%;
 }
 
 
 .page {
     margin-left: var(--navWidth);
+    width: 100%;
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .page-header {
     width: 100%;
@@ -102,41 +139,113 @@ nav a:hover {
     display: flex;
     flex-direction: row;
 }
-
+.page, .project-details {
+    padding-right: 70px;
+}
 .page h1 {
-    font-size: 3em;
     margin: 15px 0;
 }
 .page p {
-    font-size: 2em;
     margin: 15px 0;
 }
 .page a {
-    font-size: 1.6em;
     margin: 15px 0;
 }
 
-#home {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.pageRow {
+    flex-direction: row;
+    align-items: center;
 }
 
 .btn {
     border: 2px solid var(--background2);
 }
 
-.fa {
-    color: yellow;
+/* Projects */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project img {
+    height: 175px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
-.swing {
-    animation: swing 3s ease;
+/* Project Details */
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: var(--navWidth);
+    width: 100%;
+
+
+    height: 90vh;
+
+}
+.project-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.project-title{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.project-title h2 {
+    color: var(--color2);
 }
 
-.name{
-    animation-delay: 5s;
-    animation: shake 3s ease;
+.project-goals {
+    padding: 10px;
+}
+.project-goals h2 {
+    color: var(--color1);
+}
+
+.project-desc {
+    margin: 10px;
+}
+.project-desc h2 {
+    color: var(--color3);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links a {
+    margin: 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+
+    .pageRow  {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    .project-details {
+        position: absolute;
+        left: 10px;
+        top: 150px;
+        width: 80vw;
+    }
+
+    .project-details, .project-top {
+        flex-direction: column;
+    }
 }

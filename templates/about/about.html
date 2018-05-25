@@ -1,27 +1,30 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <div class="page">
+    <div class="row page pageRow">
 
-        <h1>My Qualifications</h1>
-        {% for qually in qualification %}
-            <h2>{{ qually }}</h2>
-            <p>{{ qually.description }}</p>
-        {% endfor %}
-        <
-        <br>
+        <div class="col-md-4">
+            <h1 style="color: var(--color1);">Qualifications</h1>
+            {% for qually in qualification %}
+                <h2>{{ qually }}</h2>
+                <p>{{ qually.description }}</p>
+            {% endfor %}
+        </div>
 
-        <h1>My Skills!</h1>
-        {% for skill in skills %}
-            <p>{{ skill }}</p>
-        {% endfor %}
-        <br>
 
-        <h1>Known Frameworks!</h1>
-        {% for framework in frameworks %}
-            <p>{{ framework }}</p>
-        {% endfor %}
-        <br>
+        <div class="col-md-4">
+            <h1 style="color: var(--color2);">Skills!</h1>
+            {% for skill in skills %}
+                <p>{{ skill }}</p>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-4">
+            <h1 style="color: var(--color3);">Frameworks!</h1>
+            {% for framework in frameworks %}
+                <p>{{ framework }}</p>
+            {% endfor %}
+        </div>
     </div>
 
 {% endblock %}
