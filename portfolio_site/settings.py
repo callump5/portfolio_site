@@ -84,6 +84,7 @@ WSGI_APPLICATION = 'portfolio_site.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 
+
 """
 DATABASES = {
     'default': {
