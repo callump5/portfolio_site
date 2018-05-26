@@ -16,7 +16,7 @@ class Project (models.Model):
     description = models.TextField()
 
     def __unicode__(self):
-        return self.title
+        return str(self.id) + ' - ' + self.title
 
 class ProjectGoal (models.Model):
     job = models.ForeignKey(Project, related_name='Goal')
