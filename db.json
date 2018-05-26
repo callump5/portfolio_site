@@ -1,0 +1,612 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$sk1VCg9zeU6a$g/jaDyGG9u/TQW6U9ZsMdKkRBH3/dohuGvR697NsNK4=",
+        "last_login": "2018-05-24T16:16:30.316Z",
+        "is_superuser": true,
+        "username": "callum",
+        "first_name": "",
+        "last_name": "",
+        "email": "clpullinger@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-05-24T16:16:24.818Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "95xg2qqrxh355e0fa23fb9a779vp0fl4",
+    "fields": {
+        "session_data": "MWUyYzFjY2E1OGY3NmU2MTRlYzYwNTk0NDAzNTkwNWMzODJhMDZhZDp7Il9hdXRoX3VzZXJfaGFzaCI6ImZiYTk4OTgzYzFkZDM4N2I3ZDhkNjU2Y2JjMmJkZmRjODEzYjI5NWMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2018-06-07T16:16:30.336Z"
+    }
+},
+{
+    "model": "about.qualification",
+    "pk": 1,
+    "fields": {
+        "qualification": "Foundation Degree in Software Development",
+        "description": "Level 5 Diploma"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 1,
+    "fields": {
+        "skill": "HTML5"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 2,
+    "fields": {
+        "skill": "JS"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 3,
+    "fields": {
+        "skill": "CSS"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 4,
+    "fields": {
+        "skill": "Web Design"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 5,
+    "fields": {
+        "skill": "Web Development"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 6,
+    "fields": {
+        "skill": "Version Control"
+    }
+},
+{
+    "model": "about.frameworks",
+    "pk": 1,
+    "fields": {
+        "framework": "Django"
+    }
+},
+{
+    "model": "about.frameworks",
+    "pk": 2,
+    "fields": {
+        "framework": "Flask"
+    }
+},
+{
+    "model": "about.frameworks",
+    "pk": 3,
+    "fields": {
+        "framework": "Angular"
+    }
+},
+{
+    "model": "about.frameworks",
+    "pk": 4,
+    "fields": {
+        "framework": "Bootstrap"
+    }
+},
+{
+    "model": "projects.project",
+    "pk": 1,
+    "fields": {
+        "thumb": "images/Logo2.png",
+        "link": "http://share-basildon.herokuapp.com/",
+        "git": "https://github.com/callump5/share_prj",
+        "title": "Share Respite",
+        "brief": "Full stack website from scratch",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab explicabo harum ipsum nobis perferendis placeat qui? Aliquam atque consequuntur cum, dolorum ducimus esse explicabo fuga iusto quaerat quasi repellendus tenetur.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Ab explicabo harum ipsum nobis perferendis placeat qui? Aliquam atque consequuntur cum, dolorum ducimus esse explicabo fuga iusto quaerat quasi repellendus tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab explicabo harum ipsum nobis perferendis placeat qui? Aliquam atque consequuntur cum, dolorum ducimus esse explicabo fuga iusto quaerat quasi repellendus tenetur."
+    }
+},
+{
+    "model": "projects.project",
+    "pk": 2,
+    "fields": {
+        "thumb": "images/NASA_logo.svg.png",
+        "link": "https://nasa-data-dashboard.herokuapp.com/",
+        "git": "https://github.com/callump5/nasa_data",
+        "title": "Nasa Data Dashboard",
+        "brief": "2nd Project for foundation degree",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, distinctio eos iure molestiae molestias necessitatibus provident repudiandae. Accusamus expedita facilis in incidunt minus nesciunt praesentium quae quam, repellendus\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, distinctio eos iure molestiae molestias necessitatibus provident repudiandae. Accusamus expedita facilis in incidunt minus nesciunt praesentium quae quam, repellendus\r\n Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, distinctio eos iure molestiae molestias necessitatibus provident repudiandae. Accusamus expedita facilis in incidunt minus nesciunt praesentium quae quam, repellendus"
+    }
+},
+{
+    "model": "projects.projectgoal",
+    "pk": 1,
+    "fields": {
+        "job": 1,
+        "goal": "Customisable content"
+    }
+},
+{
+    "model": "projects.projectgoal",
+    "pk": 2,
+    "fields": {
+        "job": 1,
+        "goal": "Contact form & email notifications"
+    }
+},
+{
+    "model": "projects.projectgoal",
+    "pk": 3,
+    "fields": {
+        "job": 1,
+        "goal": "Staff gallery"
+    }
+},
+{
+    "model": "projects.projectgoal",
+    "pk": 4,
+    "fields": {
+        "job": 1,
+        "goal": "Updated look"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-05-24T16:16:55.987Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-05-24T16:17:08.726Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "projectgoal"
+        ],
+        "object_id": "1",
+        "object_repr": "ProjectGoal object",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-05-24T16:27:41.461Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"thumb\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-05-24T16:30:41.999Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"thumb\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2018-05-25T10:05:00.489Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"thumb\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2018-05-25T10:06:05.001Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"thumb\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2018-05-25T10:08:07.876Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"thumb\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2018-05-25T10:53:34.876Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "projectgoal"
+        ],
+        "object_id": "2",
+        "object_repr": "Share Respite - Contact Form & Email Notifications",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2018-05-25T10:53:49.528Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "projectgoal"
+        ],
+        "object_id": "2",
+        "object_repr": "Share Respite - Contact form & email notifications",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"goal\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2018-05-25T11:17:56.163Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"link\", \"git\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2018-05-25T11:31:05.573Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Share Respite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"brief\", \"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2018-05-25T11:31:53.317Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "projectgoal"
+        ],
+        "object_id": "3",
+        "object_repr": "Share Respite - Staff gallery",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2018-05-25T11:32:15.225Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "projectgoal"
+        ],
+        "object_id": "4",
+        "object_repr": "Share Respite - Updated look",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2018-05-26T12:00:24.991Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "frameworks"
+        ],
+        "object_id": "1",
+        "object_repr": "Django",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2018-05-26T12:00:28.217Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "frameworks"
+        ],
+        "object_id": "2",
+        "object_repr": "Flask",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2018-05-26T12:00:30.947Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "frameworks"
+        ],
+        "object_id": "3",
+        "object_repr": "Angular",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2018-05-26T12:00:40.639Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "frameworks"
+        ],
+        "object_id": "4",
+        "object_repr": "Bootstrap",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2018-05-26T12:01:18.215Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "qualification"
+        ],
+        "object_id": "1",
+        "object_repr": "Foundation Degree in Software Development",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2018-05-26T12:01:25.076Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "skill"
+        ],
+        "object_id": "1",
+        "object_repr": "HTML5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2018-05-26T12:01:28.836Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "skill"
+        ],
+        "object_id": "2",
+        "object_repr": "JS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2018-05-26T12:01:32.152Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "skill"
+        ],
+        "object_id": "3",
+        "object_repr": "CSS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2018-05-26T12:01:37.099Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "skill"
+        ],
+        "object_id": "4",
+        "object_repr": "Web Design",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2018-05-26T12:01:40.614Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "skill"
+        ],
+        "object_id": "5",
+        "object_repr": "Web Development",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2018-05-26T12:01:45.882Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "about",
+            "skill"
+        ],
+        "object_id": "6",
+        "object_repr": "Version Control",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2018-05-26T12:28:49.230Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "projects",
+            "project"
+        ],
+        "object_id": "2",
+        "object_repr": "Nasa Data Dashboard",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
