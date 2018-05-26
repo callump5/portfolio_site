@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <div class="page">
+    <div class="page pageRow">
         {% for project in projects %}
             <div class="project">
                 <img src="{{ project.thumb.url }}">
@@ -10,4 +10,5 @@
             </div>        
         {% endfor %}
     </div>
+
 {% endblock %}
