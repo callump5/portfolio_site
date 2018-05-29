@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'about',
     'projects',
     'contact',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -151,8 +152,6 @@ MEDIA_URL = '/media/'
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
