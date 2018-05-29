@@ -33,6 +33,10 @@ urlpatterns = [
     # Projects
     url(r'', include('projects.urls')),
 
+    # Contact
+
+url(r'', include('contact.urls')),
+
 
     # Media
 

@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<div class="page">
+
+    {% for detail in details %}
+        <h1>{{ detail.name }}</h1>
+        <p>{{ detail.email }}</p>
+        <p>{{ detail.number }}</p>
+        <p>{{ detail.github }}</p>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

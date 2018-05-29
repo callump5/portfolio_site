@@ -3,15 +3,15 @@
 {% block content %}
     <div class="page">
 
-        <div class="">
+        <div class="project-details">
             <div class="project-top">
                 <div class="project-title">
-                    <h2 style="color: var(--color3)">{{ project }}</h2>
+                    <h2 style="color: var(--color3)">{{ project.title }}</h2>
                     <p>{{ project.brief }}</p>
                 </div>
 
                 <div class="project-goals">
-                <h2 style="color: var(--color1)">Project Goal:</h2>
+                <h2 style="color: var(--color1)">Project Goals</h2>
                     <div class="goals">
                         {% for goal in goals %}
                             <p>{{ goal.goal }}</p>

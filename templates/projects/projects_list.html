@@ -6,7 +6,7 @@
         {% for project in projects %}
             <div class="project">
                 <img src="{{ project.thumb.url }}">
-            <a class="btn" href="/projects/project-{{ project.id }}">{{ project }}</a>
+            <a class="btn" href="/projects/project-{{ project.id }}">{{ project.title }}</a>
             </div>        
         {% endfor %}
     </div>
