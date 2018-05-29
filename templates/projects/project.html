@@ -23,7 +23,10 @@
 
             <div class="project-desc">
                 <h2 style="color: var(--color2)">Description</h2>
-                <p>{{ project.description }}</p>
+                {% autoescape off %}
+                    <p>{{ project.description }}</p>
+                {% endautoescape %}
+
                 <div class="links">
                     <a  href="{{ project.git }}" class="btn">Github</a>
                     <a  href="{{ project.link }}" class="btn">Website</a>

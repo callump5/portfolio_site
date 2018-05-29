@@ -6,3 +6,6 @@ PyYAML
 whitenoise
 mysql
 pillow
+django-tinymce
+boto
+django-storages
