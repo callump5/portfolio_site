@@ -12,7 +12,7 @@ from tinymce.models import HTMLField
 
 def upload_project_img(instance, filename):
     filename_base, filename_ext = os.path.splitext(filename)
-    return 'staff/%s%s' % (
+    return 'project/%s%s' % (
         now().strftime("%Y%m%d%H%M%S"),
         filename_ext.lower(),
     )
