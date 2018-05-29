@@ -19,7 +19,7 @@ def upload_project_img(instance, filename):
 
 
 class Project (models.Model):
-    thumb = models.ImageField(upload_to=upload_project_img, blank=True, null=True)
+    thumb = models.ImageField(upload_to=upload_project_img)
     link = models.CharField(max_length=200)
     git = models.CharField(max_length=200)
 
