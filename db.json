@@ -1,23 +1,5 @@
 [
 {
-    "model": "auth.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$36000$sk1VCg9zeU6a$g/jaDyGG9u/TQW6U9ZsMdKkRBH3/dohuGvR697NsNK4=",
-        "last_login": "2018-05-24T16:16:30.316Z",
-        "is_superuser": true,
-        "username": "callum",
-        "first_name": "",
-        "last_name": "",
-        "email": "clpullinger@gmail.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2018-05-24T16:16:24.818Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
     "model": "sessions.session",
     "pk": "95xg2qqrxh355e0fa23fb9a779vp0fl4",
     "fields": {
