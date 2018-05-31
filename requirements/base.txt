@@ -1,0 +1,10 @@
+dj-database-url
+Django
+gunicorn
+pytz
+PyYAML
+whitenoise
+pillow
+django-tinymce
+boto
+django-storages
