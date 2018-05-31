@@ -176,6 +176,14 @@ nav a:hover {
     margin: 25px;
 }
 
+.project-img {
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .project img {
     height: auto;
@@ -200,8 +208,6 @@ nav a:hover {
 .project-title {
     margin-bottom: 20px;
     padding-right: 25px;
-}
-.project-goals{
 }
 .goals {
     display: flex;
