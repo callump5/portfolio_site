@@ -2,7 +2,6 @@ from base import *
 
 DEBUG = False
 
-
 #Live
 DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
