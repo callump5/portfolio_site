@@ -160,6 +160,16 @@
     }
 },
 {
+    "model": "contact.mydetails",
+    "pk": 1,
+    "fields": {
+        "name": "Callum Pullinger",
+        "number": "07412 090817",
+        "email": "clpullinger@gmail.com",
+        "github": "https://github.com/callump5/"
+    }
+},
+{
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
@@ -605,6 +615,24 @@
         ],
         "object_id": "2",
         "object_repr": "Nasa Data Dashboard",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2018-05-29T21:16:36.713Z",
+        "user": [
+            "callum"
+        ],
+        "content_type": [
+            "contact",
+            "mydetails"
+        ],
+        "object_id": "1",
+        "object_repr": "MyDetails object",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
