@@ -27,6 +27,7 @@ SECRET_KEY = '!bqh0w_z(+uozwe=b8qeo31i4h)bege_5p*c$7#$%hs%!k9^c6'
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'cpullinger.herokuapp.com',
+    'callum-pullinger.co.uk',
     'www.callum-pullinger.co.uk'
 ]
 
